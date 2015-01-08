@@ -1,0 +1,23 @@
+<?php
+
+use yii\helpers\Html;
+
+/**
+ * @var yii\web\View $this
+ * @var app\models\Project $model
+ */
+
+$this->title = 'New Project';
+$this->params['breadcrumbs'][] = ['label' => 'Projects', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="project-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'projects'=>$projects,
+        'model' => $model,
+    ]) ?>
+
+</div>
